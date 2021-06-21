@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quiz.css">
+  <title>Quiz Settings</title>
+</head>
+
+<body>
+  <div class="content-container">
+    <div class="settings-container">
+      <h1 class="title">Quick Quiz</h1>
+      <form class="settings" id="settings">
+        <h1>Choose your settings</h1>
+        <div class="questions-section">
+          <div class="question-input-title">
+            <label>How many questions?</label>
+          </div>
+          <div class="question-input">
+            <input type="number" class="numOfQuestions" id="numOfQuestions" min="1" value="10">
+          </div>
+        </div>
+        <div class="difficulty-section">
+          <div class="difficulty-title">
+            <label>Difficulty?</label>
+          </div>
+          <div class="difficulty-input">
+            <div class="difficulty-label">
+              <label>Easy</label>
+              <label>Medium</label>
+              <label>Hard</label>
+            </div>
+            <input type="range" id="difficulty" class="difficulty" min="0" max="100" value="50" step="50">
+          </div>
+        </div>
+        <button type="button" onclick="settings()" class="settings-button">Start Quiz</button>
+      </form>
+    </div>
+  </div>
+  <script src="home.js"></script>
+</body>
+
+</html>
