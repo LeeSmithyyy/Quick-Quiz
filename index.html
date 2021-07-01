@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="quiz.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <title>Quiz Settings</title>
 </head>
 
@@ -16,24 +17,59 @@
       <form class="settings" id="settings">
         <h1>Choose your settings</h1>
         <div class="questions-section">
-          <div class="question-input-title">
+          <div class="question-title input-title">
             <label>How many questions?</label>
           </div>
           <div class="question-input">
             <input type="number" class="numOfQuestions" id="numOfQuestions" min="1" value="10">
           </div>
         </div>
+        <div class="category-section">
+          <div class="category-title input-title">
+            <label>Category?</label>
+          </div>
+          <div class="category-input">
+            <select id="category" class="category">
+              <option value='' default>Any</option>
+              <option value="9">General Knowledge</option>
+              <option value="10">Books</option>
+              <option value="11">Film</option>
+              <option value="12">Music</option>
+              <option value="13">Musicals & Theatres</option>
+              <option value="14">TV</option>
+              <option value="15">Video Games</option>
+              <option value="16">Board Games</option>
+              <option value="17">Science & Nature</option>
+              <option value="18">Computers</option>
+              <option value="19">Maths</option>
+              <option value="20">Mythology</option>
+              <option value="21">Sports</option>
+              <option value="22">Geography</option>
+              <option value="23">History</option>
+              <option value="24">Politics</option>
+              <option value="25">Art</option>
+              <option value="26">Celebrities</option>
+              <option value="27">Animals</option>
+              <option value="28">Vehicles</option>
+              <option value="29">Comic Books</option>
+              <option value="30">Gadgets</option>
+              <option value="31">Anime & Manga</option>
+              <option value="32">Cartoons & Animation</option>
+            </select>
+          </div>
+        </div>
         <div class="difficulty-section">
-          <div class="difficulty-title">
+          <div class="difficulty-title input-title">
             <label>Difficulty?</label>
           </div>
           <div class="difficulty-input">
             <div class="difficulty-label">
+              <label>Any</label>
               <label>Easy</label>
               <label>Medium</label>
               <label>Hard</label>
             </div>
-            <input type="range" id="difficulty" class="difficulty" min="0" max="100" value="50" step="50">
+            <input type="range" id="difficulty" class="difficulty" min="0" max="99" value="0" step="33">
           </div>
         </div>
         <button type="button" onclick="settings()" class="settings-button">Start Quiz</button>

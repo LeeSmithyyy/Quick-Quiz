@@ -41,3 +41,13 @@ body {
   text-decoration: none;
   font-size: 1.6rem;
 }
+
+@media only screen and (max-width: 1200px) {
+  .content-container{
+    width: 80%;
+  }
+
+  .homeBtn{
+    width: 60%;
+  }
+}
